@@ -1,0 +1,4 @@
+{
+  "cmd": ["nimpretty"],
+  "format_on_save": true
+}
