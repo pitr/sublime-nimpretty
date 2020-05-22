@@ -87,6 +87,7 @@ class Command(object):
         stdout, stderr = proc.communicate()
         with open(self.tmpname) as f:
             stdout = f.read()
+        os.close(self.tmpfd)
         os.remove(self.tmpname)
         return stdout, stderr, proc.returncode
 
